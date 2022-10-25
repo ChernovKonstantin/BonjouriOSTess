@@ -9,24 +9,25 @@ import Foundation
 import Network
 import SwiftUI
 
-class Server {
-    let queue = DispatchQueue(label: "Network Server Queue")
+class Server: ObservableObject {
+    @Published var status = ""
+    @Published var message: String = "empty"
+    
+    let queue = DispatchQueue(label: "Server queue")
     let listener: NWListener
+    private var connection: NWConnection?
     
-    var listening = false
-    var dead = false
-    
-    init() throws {
-        listener = try NWListener(using: networkParams)
+    init(called: String) throws {
+        listener = try NWListener(using: Constants.networkParams)
         
-        listener.service = NWListener.Service(name: serviceName, type: serviceType)
+        listener.service = NWListener.Service(name: called, type: Constants.serviceType)
         
         listener.serviceRegistrationUpdateHandler = { (serviceChange) in
-            switch (serviceChange) {
+            switch(serviceChange) {
             case .add(let endpoint):
                 switch endpoint {
-                case let .service(name,_,_,_):
-                    print("Listening as \(name)")
+                case let .service(name, type, domain, interface):
+                    print("Service Name \(name) of type \(type) having domain: \(domain) and interface: \(String(describing: interface?.debugDescription))")
                 default:
                     break
                 }
@@ -37,42 +38,52 @@ class Server {
         
         listener.newConnectionHandler = { [weak self] newConnection in
             if let strongSelf = self {
-                newConnection.start(queue: strongSelf.queue)
+                newConnection.start(queue: .main)
                 strongSelf.receive(on: newConnection)
+                strongSelf.connection = newConnection
             }
         }
         
         listener.stateUpdateHandler = { [weak self] (newState) in
             switch (newState) {
             case .ready:
+                self?.status = "Listening on port: \(String(describing: self?.listener.port))"
                 print("Listening on port: \(String(describing: self?.listener.port))")
-                self?.listening = true
             case .failed(let error):
+                self?.status = "Failed"
                 print("Listener failed with error: \(error)")
-                self?.dead = true
             case .cancelled:
+                self?.status = "Cancelled"
                 print("Listener cancelled")
-                self?.dead = true
             default:
+                self?.status = "Not ready"
                 break
             }
         }
         
-        listener.start(queue: queue)
+        listener.start(queue: .main)
     }
     
     func receive(on connection: NWConnection) {
-        connection.receiveMessage { [weak self] completeContent, contentContext, isComplete, error in
-            if let data = completeContent, let text = String(data: data, encoding: .utf8) {
-                print("> \(text)")
+        connection.receive(minimumIncompleteLength: 1, maximumLength: 1) { [weak self] data, _, _, error in
+//        connection.receiveMessage { [weak self] completeContent, contentContext, isComplete, error in
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+            if let data = data, let text = String(data: data, encoding: .utf8) {
+                self?.message = text
+                print(text)
             }
             self?.receive(on: connection)
         }
     }
+    
+    func send(message: String = "Callback") {
+        guard let connection = connection else {
+            print("No connection found")
+            return
+        }
+        connection.send(content: message.data(using: .utf8), completion: .idempotent)
+    }
 }
-
-public let serviceType = "_bonjourTest._tcp"
-    public  let serviceDomain = "local"
-    public  let serviceName = "BonjourTest"
-    public  let networkParams: NWParameters = .udp
-
