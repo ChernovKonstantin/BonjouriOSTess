@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1701F4FD29081C890075388F /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1701F4FB29081C890075388F /* Server.swift */; };
+		1701F4FE29081C890075388F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1701F4FC29081C890075388F /* main.swift */; };
+		1701F4FF29081CB40075388F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C981FB2906F88A00DBE001 /* Constants.swift */; };
 		175CF56F2907DD2C009A253E /* Browser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CF56E2907DD2C009A253E /* Browser.swift */; };
 		17C981D72906F7AD00DBE001 /* BonjouriOSTessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C981D62906F7AD00DBE001 /* BonjouriOSTessApp.swift */; };
 		17C981D92906F7AD00DBE001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C981D82906F7AD00DBE001 /* ContentView.swift */; };
@@ -22,7 +25,25 @@
 		17C982012907096E00DBE001 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C982002907096E00DBE001 /* Server.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1701F4F229081C500075388F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1701F4E629081C150075388F /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		1701F4EB29081C150075388F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1701F4EC29081C150075388F /* MacOSServer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacOSServer.entitlements; sourceTree = "<group>"; };
+		1701F4F429081C500075388F /* MacOSServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MacOSServer; sourceTree = BUILT_PRODUCTS_DIR; };
+		1701F4FB29081C890075388F /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		1701F4FC29081C890075388F /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = ../../../Downloads/BonjourTest/Server/main.swift; sourceTree = "<group>"; };
 		175CF56E2907DD2C009A253E /* Browser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Browser.swift; sourceTree = "<group>"; };
 		175CF5702907E1E3009A253E /* BonjouriOSServer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BonjouriOSServer.entitlements; sourceTree = "<group>"; };
 		17C981D32906F7AD00DBE001 /* BonjouriOSTess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BonjouriOSTess.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +64,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1701F4F129081C500075388F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		17C981D02906F7AD00DBE001 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,12 +88,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1701F4E529081C150075388F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1701F4E629081C150075388F /* Intents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1701F4E829081C150075388F /* MacOSServer */ = {
+			isa = PBXGroup;
+			children = (
+				1701F4FC29081C890075388F /* main.swift */,
+				1701F4FB29081C890075388F /* Server.swift */,
+				1701F4EB29081C150075388F /* Info.plist */,
+				1701F4EC29081C150075388F /* MacOSServer.entitlements */,
+			);
+			path = MacOSServer;
+			sourceTree = "<group>";
+		};
 		17C981CA2906F7AD00DBE001 = {
 			isa = PBXGroup;
 			children = (
 				17C981FB2906F88A00DBE001 /* Constants.swift */,
 				17C981D52906F7AD00DBE001 /* BonjouriOSTess */,
 				17C981E92906F7E800DBE001 /* BonjouriOSServer */,
+				1701F4E829081C150075388F /* MacOSServer */,
+				1701F4E529081C150075388F /* Frameworks */,
 				17C981D42906F7AD00DBE001 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,6 +124,7 @@
 			children = (
 				17C981D32906F7AD00DBE001 /* BonjouriOSTess.app */,
 				17C981E82906F7E800DBE001 /* BonjouriOSServer.app */,
+				1701F4F429081C500075388F /* MacOSServer */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,6 +176,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1701F4F329081C500075388F /* MacOSServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1701F4F829081C510075388F /* Build configuration list for PBXNativeTarget "MacOSServer" */;
+			buildPhases = (
+				1701F4F029081C500075388F /* Sources */,
+				1701F4F129081C500075388F /* Frameworks */,
+				1701F4F229081C500075388F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacOSServer;
+			productName = MacOSServer;
+			productReference = 1701F4F429081C500075388F /* MacOSServer */;
+			productType = "com.apple.product-type.tool";
+		};
 		17C981D22906F7AD00DBE001 /* BonjouriOSTess */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17C981E12906F7B100DBE001 /* Build configuration list for PBXNativeTarget "BonjouriOSTess" */;
@@ -170,6 +237,9 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					1701F4F329081C500075388F = {
+						CreatedOnToolsVersion = 14.0;
+					};
 					17C981D22906F7AD00DBE001 = {
 						CreatedOnToolsVersion = 14.0;
 					};
@@ -193,6 +263,7 @@
 			targets = (
 				17C981D22906F7AD00DBE001 /* BonjouriOSTess */,
 				17C981E72906F7E800DBE001 /* BonjouriOSServer */,
+				1701F4F329081C500075388F /* MacOSServer */,
 			);
 		};
 /* End PBXProject section */
@@ -219,6 +290,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1701F4F029081C500075388F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1701F4FF29081CB40075388F /* Constants.swift in Sources */,
+				1701F4FD29081C890075388F /* Server.swift in Sources */,
+				1701F4FE29081C890075388F /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		17C981CF2906F7AD00DBE001 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -245,6 +326,32 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		1701F4F929081C510075388F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25FS7KFAQF;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1701F4FA29081C510075388F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25FS7KFAQF;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		17C981DF2906F7B100DBE001 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -496,6 +603,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1701F4F829081C510075388F /* Build configuration list for PBXNativeTarget "MacOSServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1701F4F929081C510075388F /* Debug */,
+				1701F4FA29081C510075388F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		17C981CE2906F7AD00DBE001 /* Build configuration list for PBXProject "BonjouriOSTess" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
