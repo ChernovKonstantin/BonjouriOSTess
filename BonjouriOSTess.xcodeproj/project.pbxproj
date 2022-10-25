@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		175CF56F2907DD2C009A253E /* Browser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CF56E2907DD2C009A253E /* Browser.swift */; };
+		17C981D72906F7AD00DBE001 /* BonjouriOSTessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C981D62906F7AD00DBE001 /* BonjouriOSTessApp.swift */; };
+		17C981D92906F7AD00DBE001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C981D82906F7AD00DBE001 /* ContentView.swift */; };
+		17C981DB2906F7B100DBE001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17C981DA2906F7B100DBE001 /* Assets.xcassets */; };
+		17C981DE2906F7B100DBE001 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17C981DD2906F7B100DBE001 /* Preview Assets.xcassets */; };
+		17C981EB2906F7E800DBE001 /* BonjouriOSServerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C981EA2906F7E800DBE001 /* BonjouriOSServerApp.swift */; };
+		17C981ED2906F7E800DBE001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C981EC2906F7E800DBE001 /* ContentView.swift */; };
+		17C981EF2906F7EA00DBE001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17C981EE2906F7EA00DBE001 /* Assets.xcassets */; };
+		17C981F22906F7EA00DBE001 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17C981F12906F7EA00DBE001 /* Preview Assets.xcassets */; };
+		17C981FC2906F88A00DBE001 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C981FB2906F88A00DBE001 /* Constants.swift */; };
+		17C981FD2906F88A00DBE001 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C981FB2906F88A00DBE001 /* Constants.swift */; };
+		17C981FF2907096200DBE001 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C981FE2907096200DBE001 /* Client.swift */; };
+		17C982012907096E00DBE001 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C982002907096E00DBE001 /* Server.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		175CF56E2907DD2C009A253E /* Browser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Browser.swift; sourceTree = "<group>"; };
+		175CF5702907E1E3009A253E /* BonjouriOSServer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BonjouriOSServer.entitlements; sourceTree = "<group>"; };
+		17C981D32906F7AD00DBE001 /* BonjouriOSTess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BonjouriOSTess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17C981D62906F7AD00DBE001 /* BonjouriOSTessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonjouriOSTessApp.swift; sourceTree = "<group>"; };
+		17C981D82906F7AD00DBE001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		17C981DA2906F7B100DBE001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17C981DD2906F7B100DBE001 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		17C981E82906F7E800DBE001 /* BonjouriOSServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BonjouriOSServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17C981EA2906F7E800DBE001 /* BonjouriOSServerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonjouriOSServerApp.swift; sourceTree = "<group>"; };
+		17C981EC2906F7E800DBE001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		17C981EE2906F7EA00DBE001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17C981F12906F7EA00DBE001 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		17C981F62906F81E00DBE001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		17C981F72906F82C00DBE001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		17C981FB2906F88A00DBE001 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		17C981FE2907096200DBE001 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		17C982002907096E00DBE001 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17C981D02906F7AD00DBE001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17C981E52906F7E800DBE001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17C981CA2906F7AD00DBE001 = {
+			isa = PBXGroup;
+			children = (
+				17C981FB2906F88A00DBE001 /* Constants.swift */,
+				17C981D52906F7AD00DBE001 /* BonjouriOSTess */,
+				17C981E92906F7E800DBE001 /* BonjouriOSServer */,
+				17C981D42906F7AD00DBE001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		17C981D42906F7AD00DBE001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17C981D32906F7AD00DBE001 /* BonjouriOSTess.app */,
+				17C981E82906F7E800DBE001 /* BonjouriOSServer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17C981D52906F7AD00DBE001 /* BonjouriOSTess */ = {
+			isa = PBXGroup;
+			children = (
+				17C981F72906F82C00DBE001 /* Info.plist */,
+				17C981D62906F7AD00DBE001 /* BonjouriOSTessApp.swift */,
+				17C981FE2907096200DBE001 /* Client.swift */,
+				175CF56E2907DD2C009A253E /* Browser.swift */,
+				17C981D82906F7AD00DBE001 /* ContentView.swift */,
+				17C981DA2906F7B100DBE001 /* Assets.xcassets */,
+				17C981DC2906F7B100DBE001 /* Preview Content */,
+			);
+			path = BonjouriOSTess;
+			sourceTree = "<group>";
+		};
+		17C981DC2906F7B100DBE001 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				17C981DD2906F7B100DBE001 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		17C981E92906F7E800DBE001 /* BonjouriOSServer */ = {
+			isa = PBXGroup;
+			children = (
+				175CF5702907E1E3009A253E /* BonjouriOSServer.entitlements */,
+				17C981F62906F81E00DBE001 /* Info.plist */,
+				17C981EA2906F7E800DBE001 /* BonjouriOSServerApp.swift */,
+				17C982002907096E00DBE001 /* Server.swift */,
+				17C981EC2906F7E800DBE001 /* ContentView.swift */,
+				17C981EE2906F7EA00DBE001 /* Assets.xcassets */,
+				17C981F02906F7EA00DBE001 /* Preview Content */,
+			);
+			path = BonjouriOSServer;
+			sourceTree = "<group>";
+		};
+		17C981F02906F7EA00DBE001 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				17C981F12906F7EA00DBE001 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17C981D22906F7AD00DBE001 /* BonjouriOSTess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17C981E12906F7B100DBE001 /* Build configuration list for PBXNativeTarget "BonjouriOSTess" */;
+			buildPhases = (
+				17C981CF2906F7AD00DBE001 /* Sources */,
+				17C981D02906F7AD00DBE001 /* Frameworks */,
+				17C981D12906F7AD00DBE001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BonjouriOSTess;
+			productName = BonjouriOSTess;
+			productReference = 17C981D32906F7AD00DBE001 /* BonjouriOSTess.app */;
+			productType = "com.apple.product-type.application";
+		};
+		17C981E72906F7E800DBE001 /* BonjouriOSServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17C981F32906F7EA00DBE001 /* Build configuration list for PBXNativeTarget "BonjouriOSServer" */;
+			buildPhases = (
+				17C981E42906F7E800DBE001 /* Sources */,
+				17C981E52906F7E800DBE001 /* Frameworks */,
+				17C981E62906F7E800DBE001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BonjouriOSServer;
+			productName = BonjouriOSServer;
+			productReference = 17C981E82906F7E800DBE001 /* BonjouriOSServer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17C981CB2906F7AD00DBE001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					17C981D22906F7AD00DBE001 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					17C981E72906F7E800DBE001 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 17C981CE2906F7AD00DBE001 /* Build configuration list for PBXProject "BonjouriOSTess" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 17C981CA2906F7AD00DBE001;
+			productRefGroup = 17C981D42906F7AD00DBE001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17C981D22906F7AD00DBE001 /* BonjouriOSTess */,
+				17C981E72906F7E800DBE001 /* BonjouriOSServer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17C981D12906F7AD00DBE001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17C981DE2906F7B100DBE001 /* Preview Assets.xcassets in Resources */,
+				17C981DB2906F7B100DBE001 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17C981E62906F7E800DBE001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17C981F22906F7EA00DBE001 /* Preview Assets.xcassets in Resources */,
+				17C981EF2906F7EA00DBE001 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17C981CF2906F7AD00DBE001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				175CF56F2907DD2C009A253E /* Browser.swift in Sources */,
+				17C981D92906F7AD00DBE001 /* ContentView.swift in Sources */,
+				17C981D72906F7AD00DBE001 /* BonjouriOSTessApp.swift in Sources */,
+				17C981FF2907096200DBE001 /* Client.swift in Sources */,
+				17C981FC2906F88A00DBE001 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17C981E42906F7E800DBE001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17C981ED2906F7E800DBE001 /* ContentView.swift in Sources */,
+				17C981EB2906F7E800DBE001 /* BonjouriOSServerApp.swift in Sources */,
+				17C982012907096E00DBE001 /* Server.swift in Sources */,
+				17C981FD2906F88A00DBE001 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		17C981DF2906F7B100DBE001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		17C981E02906F7B100DBE001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17C981E22906F7B100DBE001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BonjouriOSTess/Preview Content\"";
+				DEVELOPMENT_TEAM = 25FS7KFAQF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BonjouriOSTess/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "browser needs to have network access to search for Multicast services";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = n.BonjouriOSTess;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		17C981E32906F7B100DBE001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BonjouriOSTess/Preview Content\"";
+				DEVELOPMENT_TEAM = 25FS7KFAQF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BonjouriOSTess/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "browser needs to have network access to search for Multicast services";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = n.BonjouriOSTess;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		17C981F42906F7EA00DBE001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BonjouriOSServer/BonjouriOSServer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BonjouriOSServer/Preview Content\"";
+				DEVELOPMENT_TEAM = 25FS7KFAQF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BonjouriOSServer/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "browser needs to have network access to search for Multicast services";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = n.BonjouriOSServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		17C981F52906F7EA00DBE001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BonjouriOSServer/BonjouriOSServer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BonjouriOSServer/Preview Content\"";
+				DEVELOPMENT_TEAM = 25FS7KFAQF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BonjouriOSServer/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "browser needs to have network access to search for Multicast services";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = n.BonjouriOSServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17C981CE2906F7AD00DBE001 /* Build configuration list for PBXProject "BonjouriOSTess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17C981DF2906F7B100DBE001 /* Debug */,
+				17C981E02906F7B100DBE001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17C981E12906F7B100DBE001 /* Build configuration list for PBXNativeTarget "BonjouriOSTess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17C981E22906F7B100DBE001 /* Debug */,
+				17C981E32906F7B100DBE001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17C981F32906F7EA00DBE001 /* Build configuration list for PBXNativeTarget "BonjouriOSServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17C981F42906F7EA00DBE001 /* Debug */,
+				17C981F52906F7EA00DBE001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17C981CB2906F7AD00DBE001 /* Project object */;
+}
