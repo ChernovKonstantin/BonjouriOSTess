@@ -26,10 +26,6 @@ struct ContentView: View {
                 Text("Send")
             })
             Spacer()
-            Text(client.message)
-                .font(.title)
-                .frame(width: 200)
-            Spacer()
             Text(client.status)
         }
         .padding()

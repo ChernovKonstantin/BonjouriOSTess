@@ -15,14 +15,8 @@
 		17C981D92906F7AD00DBE001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C981D82906F7AD00DBE001 /* ContentView.swift */; };
 		17C981DB2906F7B100DBE001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17C981DA2906F7B100DBE001 /* Assets.xcassets */; };
 		17C981DE2906F7B100DBE001 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17C981DD2906F7B100DBE001 /* Preview Assets.xcassets */; };
-		17C981EB2906F7E800DBE001 /* BonjouriOSServerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C981EA2906F7E800DBE001 /* BonjouriOSServerApp.swift */; };
-		17C981ED2906F7E800DBE001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C981EC2906F7E800DBE001 /* ContentView.swift */; };
-		17C981EF2906F7EA00DBE001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17C981EE2906F7EA00DBE001 /* Assets.xcassets */; };
-		17C981F22906F7EA00DBE001 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17C981F12906F7EA00DBE001 /* Preview Assets.xcassets */; };
 		17C981FC2906F88A00DBE001 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C981FB2906F88A00DBE001 /* Constants.swift */; };
-		17C981FD2906F88A00DBE001 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C981FB2906F88A00DBE001 /* Constants.swift */; };
 		17C981FF2907096200DBE001 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C981FE2907096200DBE001 /* Client.swift */; };
-		17C982012907096E00DBE001 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C982002907096E00DBE001 /* Server.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,22 +39,14 @@
 		1701F4FB29081C890075388F /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		1701F4FC29081C890075388F /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = ../../../Downloads/BonjourTest/Server/main.swift; sourceTree = "<group>"; };
 		175CF56E2907DD2C009A253E /* Browser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Browser.swift; sourceTree = "<group>"; };
-		175CF5702907E1E3009A253E /* BonjouriOSServer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BonjouriOSServer.entitlements; sourceTree = "<group>"; };
 		17C981D32906F7AD00DBE001 /* BonjouriOSTess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BonjouriOSTess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17C981D62906F7AD00DBE001 /* BonjouriOSTessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonjouriOSTessApp.swift; sourceTree = "<group>"; };
 		17C981D82906F7AD00DBE001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		17C981DA2906F7B100DBE001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17C981DD2906F7B100DBE001 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		17C981E82906F7E800DBE001 /* BonjouriOSServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BonjouriOSServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		17C981EA2906F7E800DBE001 /* BonjouriOSServerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonjouriOSServerApp.swift; sourceTree = "<group>"; };
-		17C981EC2906F7E800DBE001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		17C981EE2906F7EA00DBE001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		17C981F12906F7EA00DBE001 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		17C981F62906F81E00DBE001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		17C981F72906F82C00DBE001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		17C981FB2906F88A00DBE001 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		17C981FE2907096200DBE001 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
-		17C982002907096E00DBE001 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,13 +58,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		17C981D02906F7AD00DBE001 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		17C981E52906F7E800DBE001 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -112,7 +91,6 @@
 			children = (
 				17C981FB2906F88A00DBE001 /* Constants.swift */,
 				17C981D52906F7AD00DBE001 /* BonjouriOSTess */,
-				17C981E92906F7E800DBE001 /* BonjouriOSServer */,
 				1701F4E829081C150075388F /* MacOSServer */,
 				1701F4E529081C150075388F /* Frameworks */,
 				17C981D42906F7AD00DBE001 /* Products */,
@@ -123,7 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				17C981D32906F7AD00DBE001 /* BonjouriOSTess.app */,
-				17C981E82906F7E800DBE001 /* BonjouriOSServer.app */,
 				1701F4F429081C500075388F /* MacOSServer */,
 			);
 			name = Products;
@@ -134,8 +111,8 @@
 			children = (
 				17C981F72906F82C00DBE001 /* Info.plist */,
 				17C981D62906F7AD00DBE001 /* BonjouriOSTessApp.swift */,
-				17C981FE2907096200DBE001 /* Client.swift */,
 				175CF56E2907DD2C009A253E /* Browser.swift */,
+				17C981FE2907096200DBE001 /* Client.swift */,
 				17C981D82906F7AD00DBE001 /* ContentView.swift */,
 				17C981DA2906F7B100DBE001 /* Assets.xcassets */,
 				17C981DC2906F7B100DBE001 /* Preview Content */,
@@ -147,28 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				17C981DD2906F7B100DBE001 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		17C981E92906F7E800DBE001 /* BonjouriOSServer */ = {
-			isa = PBXGroup;
-			children = (
-				175CF5702907E1E3009A253E /* BonjouriOSServer.entitlements */,
-				17C981F62906F81E00DBE001 /* Info.plist */,
-				17C981EA2906F7E800DBE001 /* BonjouriOSServerApp.swift */,
-				17C982002907096E00DBE001 /* Server.swift */,
-				17C981EC2906F7E800DBE001 /* ContentView.swift */,
-				17C981EE2906F7EA00DBE001 /* Assets.xcassets */,
-				17C981F02906F7EA00DBE001 /* Preview Content */,
-			);
-			path = BonjouriOSServer;
-			sourceTree = "<group>";
-		};
-		17C981F02906F7EA00DBE001 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				17C981F12906F7EA00DBE001 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -210,23 +165,6 @@
 			productReference = 17C981D32906F7AD00DBE001 /* BonjouriOSTess.app */;
 			productType = "com.apple.product-type.application";
 		};
-		17C981E72906F7E800DBE001 /* BonjouriOSServer */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 17C981F32906F7EA00DBE001 /* Build configuration list for PBXNativeTarget "BonjouriOSServer" */;
-			buildPhases = (
-				17C981E42906F7E800DBE001 /* Sources */,
-				17C981E52906F7E800DBE001 /* Frameworks */,
-				17C981E62906F7E800DBE001 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = BonjouriOSServer;
-			productName = BonjouriOSServer;
-			productReference = 17C981E82906F7E800DBE001 /* BonjouriOSServer.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -241,9 +179,6 @@
 						CreatedOnToolsVersion = 14.0;
 					};
 					17C981D22906F7AD00DBE001 = {
-						CreatedOnToolsVersion = 14.0;
-					};
-					17C981E72906F7E800DBE001 = {
 						CreatedOnToolsVersion = 14.0;
 					};
 				};
@@ -262,7 +197,6 @@
 			projectRoot = "";
 			targets = (
 				17C981D22906F7AD00DBE001 /* BonjouriOSTess */,
-				17C981E72906F7E800DBE001 /* BonjouriOSServer */,
 				1701F4F329081C500075388F /* MacOSServer */,
 			);
 		};
@@ -275,15 +209,6 @@
 			files = (
 				17C981DE2906F7B100DBE001 /* Preview Assets.xcassets in Resources */,
 				17C981DB2906F7B100DBE001 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		17C981E62906F7E800DBE001 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				17C981F22906F7EA00DBE001 /* Preview Assets.xcassets in Resources */,
-				17C981EF2906F7EA00DBE001 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,17 +234,6 @@
 				17C981D72906F7AD00DBE001 /* BonjouriOSTessApp.swift in Sources */,
 				17C981FF2907096200DBE001 /* Client.swift in Sources */,
 				17C981FC2906F88A00DBE001 /* Constants.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		17C981E42906F7E800DBE001 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				17C981ED2906F7E800DBE001 /* ContentView.swift in Sources */,
-				17C981EB2906F7E800DBE001 /* BonjouriOSServerApp.swift in Sources */,
-				17C982012907096E00DBE001 /* Server.swift in Sources */,
-				17C981FD2906F88A00DBE001 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,76 +444,6 @@
 			};
 			name = Release;
 		};
-		17C981F42906F7EA00DBE001 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = BonjouriOSServer/BonjouriOSServer.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BonjouriOSServer/Preview Content\"";
-				DEVELOPMENT_TEAM = 25FS7KFAQF;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BonjouriOSServer/Info.plist;
-				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "browser needs to have network access to search for Multicast services";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = n.BonjouriOSServer;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = macosx;
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		17C981F52906F7EA00DBE001 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = BonjouriOSServer/BonjouriOSServer.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BonjouriOSServer/Preview Content\"";
-				DEVELOPMENT_TEAM = 25FS7KFAQF;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BonjouriOSServer/Info.plist;
-				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "browser needs to have network access to search for Multicast services";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = n.BonjouriOSServer;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = macosx;
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -626,15 +470,6 @@
 			buildConfigurations = (
 				17C981E22906F7B100DBE001 /* Debug */,
 				17C981E32906F7B100DBE001 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		17C981F32906F7EA00DBE001 /* Build configuration list for PBXNativeTarget "BonjouriOSServer" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				17C981F42906F7EA00DBE001 /* Debug */,
-				17C981F52906F7EA00DBE001 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

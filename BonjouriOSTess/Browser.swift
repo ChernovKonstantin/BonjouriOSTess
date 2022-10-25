@@ -38,13 +38,11 @@ class Browser: ObservableObject {
               }
             }
         browser.browseResultsChangedHandler = { ( results, changes ) in
-            print("NW Browser: Scan results found:")
             for result in results {
-                print(result.endpoint.debugDescription)
+                print("Found: \(result.endpoint.debugDescription)")
             }
             for change in changes {
                 if case .added(let added) = change {
-                    print("NW Browser: Added")
                     if case .service(let name, _, _, _) = added.endpoint {
                         self.device = name
                     }

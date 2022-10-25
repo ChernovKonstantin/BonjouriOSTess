@@ -11,8 +11,7 @@ import Combine
 import SwiftUI
 
 class Client: ObservableObject {
-    @Published var status: String = "Not ready"
-    @Published var message: String = "empty"
+    @Published var status: String = "Not connected"
     @ObservedObject var browser = Browser()
     
     let queue = DispatchQueue(label: "Client queue")
@@ -23,7 +22,7 @@ class Client: ObservableObject {
     init() {
         browser.$device
             .sink(receiveValue: { [weak self] deviceName in
-                if deviceName.count > 0 {
+                if !deviceName.isEmpty {
                     self?.start(name: deviceName)
                 }
             })
@@ -40,7 +39,7 @@ class Client: ObservableObject {
         connection?.stateUpdateHandler = { (newState) in
             switch (newState) {
             case .ready:
-                self.status = "Connected"
+                self.status = "Connected to \(self.browser.device)"
                 print("Ready to send")
             case .failed(let error):
                 self.status = "Failed"
@@ -49,7 +48,7 @@ class Client: ObservableObject {
                 self.status = "Cancelled"
                 print("Connection cancelled")
             default:
-                self.status = "Not ready"
+                self.status = "Not connected"
                 print(newState)
                 break
             }
@@ -69,7 +68,6 @@ class Client: ObservableObject {
                 return
             }
             if let data = data, let text = String(data: data, encoding: .utf8) {
-                self?.message = text
                 print(text)
             }
             self?.receive(on: connection)

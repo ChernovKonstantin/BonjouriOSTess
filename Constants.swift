@@ -12,6 +12,6 @@ import Network
 public enum Constants {
     public static let serviceType = "_bonjourTest._tcp"
     public static let serviceDomain = "local"
-    public static let serviceName = "BonjourTest"
+//    public static let serviceName = "BonjourTest"
     public static let networkParams: NWParameters = .tcp
 }
